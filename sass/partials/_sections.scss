@@ -1,15 +1,21 @@
 .section {
+    display: inline-block;
+
     &--about {
         margin-top: 34px;
+        margin-bottom: -4px;
         @extend .section;
         background-color: $about-bgcolor;
         
         .section__content {
-            @include span(8 of 12);
-            float: none;
-            text-align: center;
-
+            
         };
+
+        .section__content-text {
+            @include span(6 of 12);
+            margin-left: span(3);
+            margin-right: span(3);
+        }
     }
 
     &--work {
@@ -18,10 +24,9 @@
         @include background_cover(url(../images/male_damselfly.jpg));
      
         .section__content {
-
+            
 
         };
-
     }
 
     &--connect {
@@ -29,21 +34,19 @@
         background-color: $connect-bgcolor;
         .section__content {
             @include span(8 of 12);
-            float: none;
+            margin-left: span(2);
+            margin-right: span(2);
         };
-
     }
 
     &--blog {
         @extend .section;
         background-color: $blog-bgcolor;
 
-
         .section__content {
             @include span(8 of 12);
-            float: none;
-
+            margin-left: span(2);
+            margin-right: span(2);
         };
-
     }
 }

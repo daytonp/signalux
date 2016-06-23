@@ -476,13 +476,6 @@ a, a:hover, a:visited {
 /* line 115, ../sass/partials/_framework.scss */
 .section, .section--about, .section--work, .section--connect, .section--blog {
   width: 100%;
-  min-height: 400px;
-}
-@media (max-width: 768px) {
-  /* line 115, ../sass/partials/_framework.scss */
-  .section, .section--about, .section--work, .section--connect, .section--blog {
-    min-height: 200px;
-  }
 }
 
 /* line 124, ../sass/partials/_framework.scss */
@@ -535,24 +528,29 @@ a, a:hover, a:visited {
   }
 }
 
-/* line 2, ../sass/partials/_sections.scss */
+/* line 1, ../sass/partials/_sections.scss */
+.section, .section--about, .section--work, .section--connect, .section--blog {
+  display: inline-block;
+}
+/* line 4, ../sass/partials/_sections.scss */
 .section--about {
   margin-top: 34px;
+  margin-bottom: -4px;
   background-color: #efe9ea;
 }
-/* line 7, ../sass/partials/_sections.scss */
-.section--about .section__content {
+/* line 14, ../sass/partials/_sections.scss */
+.section--about .section__content-text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.6666666667%;
+  width: 50%;
   float: left;
   padding-left: 3.7878787879%;
   padding-right: 3.7878787879%;
-  float: none;
-  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
-/* line 15, ../sass/partials/_sections.scss */
+/* line 21, ../sass/partials/_sections.scss */
 .section--work {
   background-color: #d5596b;
   -webkit-background-size: cover;
@@ -561,11 +559,11 @@ a, a:hover, a:visited {
   background-position: 50% 50%;
   background-image: url(../images/male_damselfly.jpg);
 }
-/* line 27, ../sass/partials/_sections.scss */
+/* line 32, ../sass/partials/_sections.scss */
 .section--connect {
   background-color: #ffffff;
 }
-/* line 30, ../sass/partials/_sections.scss */
+/* line 35, ../sass/partials/_sections.scss */
 .section--connect .section__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -574,13 +572,14 @@ a, a:hover, a:visited {
   float: left;
   padding-left: 3.7878787879%;
   padding-right: 3.7878787879%;
-  float: none;
+  margin-left: 16.6666666667%;
+  margin-right: 16.6666666667%;
 }
-/* line 37, ../sass/partials/_sections.scss */
+/* line 42, ../sass/partials/_sections.scss */
 .section--blog {
   background-color: #ffffff;
 }
-/* line 42, ../sass/partials/_sections.scss */
+/* line 46, ../sass/partials/_sections.scss */
 .section--blog .section__content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -589,7 +588,8 @@ a, a:hover, a:visited {
   float: left;
   padding-left: 3.7878787879%;
   padding-right: 3.7878787879%;
-  float: none;
+  margin-left: 16.6666666667%;
+  margin-right: 16.6666666667%;
 }
 
 /* line 7, ../../../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.2/stylesheets/h5bp/_helpers.scss */
