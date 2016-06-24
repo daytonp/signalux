@@ -24,6 +24,7 @@
         &-items {
             float: right;
             margin-right: 10px;
+            margin-top: 10px;
         }
 
         &-item {
@@ -31,6 +32,8 @@
             margin-left: 10px;
             width: 65px;
             text-align: center;
+            text-transform: uppercase;
+            font-family: 'Alegreya Sans', sans-serif;
         }
 
         &-item a {
@@ -38,7 +41,7 @@
         }
 
         &-item a:hover {
-            font-weight: bold;
+            font-weight: 500;
         }
 
         @media (min-width: $tablet-breakpoint+1) {
@@ -144,4 +147,26 @@
     @media (min-width: $mobile-breakpoint+1) and (max-width: $tablet-breakpoint) {
         @include span(6 of 12);
     }
+}
+
+.text-about{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #4A4A4A
+}
+
+strong{
+        color: black;
+        font-weight: 500;
+    }
+a {
+    color: $brand-primary;
+    :hover {
+        color: black;
+    }
+}
+
+.about-logo{
+    text-align: center;
 }

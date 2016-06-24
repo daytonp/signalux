@@ -2,7 +2,7 @@
     display: inline-block;
 
     &--about {
-        margin-top: 34px;
+        margin-top: 134px;
         margin-bottom: -4px;
         @extend .section;
         background-color: $about-bgcolor;
@@ -12,19 +12,19 @@
         };
 
         .section__content-text {
-            @include span(6 of 12);
-            margin-left: span(3);
-            margin-right: span(3);
+            @include span(8 of 12);
+            margin-left: span(2);
+            //margin-right: span(3);
         }
     }
 
     &--work {
         @extend .section;
-        background-color: $work-bgcolor;
+        background-color: $about-bgcolor;
         @include background_cover(url(../images/male_damselfly.jpg));
      
         .section__content {
-            
+            height: 700px;
 
         };
     }
