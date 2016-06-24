@@ -18,13 +18,87 @@
         }
     }
 
-    &--work {
+    &--work-chl {
         @extend .section;
-        background-color: $about-bgcolor;
-        @include background_cover(url(../images/male_damselfly.jpg));
+        background-color: #D5596B;
+        padding: 60px 0 60px 0;
+        .section__content {
+            h1 {
+                text-transform: uppercase;
+                color: white;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 60px;
+                font-size: 64px;
+            }
+            .text-date {
+                color: white;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            .text-title {
+                color: white;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 400;
+                margin-bottom: 30px;
+                font-size: 24px;
+            }
+
+            .text-byline {
+                color: white;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 40px;
+                line-height: 1.3;
+            }
+
+            .read-more{
+                text-transform: uppercase;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: white;
+                a {
+                    color: white;
+                }
+            }
+
+        };
+    }
+
+    &--work-tsn {
+        @extend .section;
+        background-color: black;
+        @include background_cover(url(../images/work_tsn.jpg));
      
         .section__content {
             height: 700px;
+             h1 {
+                text-transform: uppercase;
+                color: white;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 400;
+                text-align: right;
+                margin-top: 200px;
+                margin-bottom: 60px;
+                font-size: 64px;
+            }
+        .section__content-column {
+            @include span(6 of 12);
+            margin-left: span(6);
+            .text-byline {
+                color: white;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 40px;
+                line-height: 1.3;
+            }
+        }
 
         };
     }
@@ -43,10 +117,15 @@
         @extend .section;
         background-color: $blog-bgcolor;
 
+
         .section__content {
             @include span(8 of 12);
             margin-left: span(2);
             margin-right: span(2);
         };
     }
+}
+
+.section__contentbg-chl{
+    background-color: #D5596B;
 }
