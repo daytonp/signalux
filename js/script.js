@@ -39,8 +39,8 @@ $(document).ready(function() {
         scrollTo("section--connect");
     });
 
-    $("#desktop-header__menu-item-blog").click(function() {
-        scrollTo("section--blog");
+    $("#desktop-header__menu-item-contact").click(function() {
+        scrollTo("section--contact");
     });
 
     // mobile menu buttons
@@ -68,11 +68,11 @@ $(document).ready(function() {
         }, menu_slide_speed);
     });
 
-    $("#mobile-menu__item-blog").click(function(e) {
+    $("#mobile-menu__item-contact").click(function(e) {
         e.preventDefault();
         $(".mobile-menu").removeClass("mobile-menu--visible");
         window.setTimeout(function() {
-            scrollTo("section--blog");
+            scrollTo("section--contact");
         }, menu_slide_speed);
     });
 

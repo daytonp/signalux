@@ -210,7 +210,7 @@ h1 {
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 400;
     font-size: 32px;
-    color: #4A4A4A
+    color: #4A4A4A;
 }
 
 .text-copyright {
@@ -231,9 +231,15 @@ strong{
     }
 a {
     color: $brand-primary;
-    :hover {
-        color: black;
+    font-weight: 400;
+    &:hover {
+        color: $brand-primary-dark;
     }
+}
+
+blockquote{
+    font-style: italic;
+    margin: 10px 0 0 0;
 }
 
 //BUTTONS//
@@ -241,7 +247,7 @@ a.button{
     color: white;
     &:hover{
         color: white;
-        background-color: black;
+        background-color: $brand-primary-dark;
     }
 }
 .button{
