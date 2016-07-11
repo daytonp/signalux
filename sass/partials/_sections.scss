@@ -2,8 +2,7 @@
     display: inline-block;
 
     &--about {
-        margin-top: 134px;
-        margin-bottom: -4px;
+        padding-top: 134px;
         @extend .section;
         background-color: $about-bgcolor;
         
@@ -24,43 +23,21 @@
         padding: 60px 0 60px 0;
         .section__content {
             h1 {
-                text-transform: uppercase;
                 color: white;
-                font-family: 'Alegreya Sans', sans-serif;
-                font-weight: 400;
-                text-align: center;
-                margin-bottom: 60px;
-                font-size: 64px;
             }
             .text-date {
                 color: white;
-                font-family: 'Alegreya Sans', sans-serif;
-                font-weight: 400;
-                margin-bottom: 20px;
             }
 
             .text-title {
                 color: white;
-                font-family: 'Alegreya Sans', sans-serif;
-                font-weight: 400;
-                margin-bottom: 30px;
-                font-size: 24px;
             }
 
             .text-byline {
                 color: white;
-                font-family: 'Alegreya Sans', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
-                margin-bottom: 40px;
-                line-height: 1.3;
             }
 
             .read-more{
-                text-transform: uppercase;
-                font-family: 'Alegreya Sans', sans-serif;
-                font-size: 16px;
-                font-weight: 500;
                 color: white;
                 a {
                     color: white;
@@ -78,51 +55,109 @@
         .section__content {
             height: 700px;
              h1 {
-                text-transform: uppercase;
                 color: white;
-                font-family: 'Alegreya Sans', sans-serif;
-                font-weight: 400;
                 text-align: right;
                 margin-top: 200px;
-                margin-bottom: 60px;
-                font-size: 64px;
+                margin-bottom: 0px;
+            }
+
+            .read-more{
+                color: white;
+                a {
+                    color: white;
+                }
             }
         .section__content-column {
             @include span(6 of 12);
             margin-left: span(6);
             .text-byline {
                 color: white;
-                font-family: 'Alegreya Sans', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
-                margin-bottom: 40px;
-                line-height: 1.3;
             }
         }
 
         };
     }
-
-    &--connect {
-        @extend .section;
-        background-color: $connect-bgcolor;
-        .section__content {
-            @include span(8 of 12);
-            margin-left: span(2);
-            margin-right: span(2);
-        };
-    }
+  
 
     &--blog {
         @extend .section;
         background-color: $blog-bgcolor;
+        .section__content{
+            h1 {
+                    color: $brand-primary;
+                }
+        }
 
-
-        .section__content {
+        .section__content-item {
             @include span(8 of 12);
             margin-left: span(2);
-            margin-right: span(2);
+            .text-date {
+                color: $black-color;
+            }
+
+            .text-title {
+                color: $black-color;
+            }
+
+            .text-byline {
+                color: $black-color;
+            }
+            .read-more{
+                color: $brand-primary;
+                a {
+                    color: $brand-primary;
+                }
+
+            }
         };
+        .section__content-separator{
+            @include span(12 of 12);
+            margin-bottom: 30px;
+            hr {
+                border: 0;
+                height: 1px;
+                background: #ccc;
+            }
+        }
+    }
+
+    &--connect {
+        @extend .section;
+        background-color: $connect-bgcolor;
+        padding-bottom: 60px;
+        .section__content{
+            h1 {
+                    color: $brand-primary;
+            }
+        }
+         .section__content-text{
+           @include span(8 of 12);
+            margin-left: span(2); 
+        }
+        .calltoaction{
+            @include span(8 of 12);
+            margin-left: span(2); 
+        }
+    }
+
+    &--footer {
+        @extend .section;
+        background-color: $brand-primary;
+        .section__content{
+            margin-top: 20px;
+            .text-copyright{
+                @include span(8 of 12);
+                color: white;
+            }
+            .text-address{
+                @include span(4 of 12);
+                //margin-left: span(8); 
+                color: white;
+                a{
+                    color:white;
+                }
+            }
+        }
     }
 }
 
