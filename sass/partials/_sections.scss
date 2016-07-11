@@ -5,14 +5,20 @@
         padding-top: 134px;
         @extend .section;
         background-color: $about-bgcolor;
+        @media (max-width:$tablet-breakpoint){
+               padding-top: 50px;
+            }
         
-        .section__content {
-            
+        .section__content {           
         };
 
         .section__content-text {
             @include span(8 of 12);
             margin-left: span(2);
+            @media (max-width:$tablet-breakpoint){
+               @include span(12 of 12); 
+               margin-left: span(0);
+            }
             //margin-right: span(3);
         }
     }
@@ -21,6 +27,9 @@
         @extend .section;
         background-color: #D5596B;
         padding: 60px 0 60px 0;
+        @media (max-width:$tablet-breakpoint){
+            padding: 30px 0 30px 0;
+        }
         .section__content {
             h1 {
                 color: white;
@@ -31,10 +40,22 @@
 
             .text-title {
                 color: white;
+                a {
+                    color: white;
+                    &:hover{
+                        color: black;
+                    }
+                }
             }
 
             .text-byline {
                 color: white;
+                a {
+                    color: white;
+                    &:hover{
+                        color: black;
+                    }
+                }
             }
 
             .read-more{
@@ -58,11 +79,18 @@
      
         .section__content {
             height: 700px;
+            @media (max-width:$tablet-breakpoint){
+                height: 567px;
+            }
              h1 {
                 color: white;
-                text-align: right;
+                // text-align: right;
                 margin-top: 200px;
                 margin-bottom: 0px;
+                @media (max-width:$tablet-breakpoint){
+                    margin-top: 180px;
+                    text-align: none;
+                }
             }
 
             .read-more{
@@ -71,13 +99,17 @@
                     color: white;
                     font-weight: 700;
                     &:hover{
-                        color: $brand-primary;
+                        color: #ccc;
                     }
                 }
             }
         .section__content-column {
             @include span(6 of 12);
             margin-left: span(6);
+            @media (max-width:$tablet-breakpoint){
+                @include span(9 of 12);
+                margin-left: span(3);
+            }
             .text-byline {
                 color: white;
             }
@@ -92,17 +124,25 @@
         padding-bottom: 60px;
         .section__content{
             h1 {
-                    color: $brand-primary;
+                color: $brand-primary;
             }
         }
         .section__content-text{
             @include span(8 of 12);
             margin-left: span(2); 
             margin-bottom: 40px;
+            @media (max-width:$tablet-breakpoint){
+                @include span(12 of 12);
+                margin-left: span(0);
+            }
         }
         .section__content-item {
             @include span(8 of 12);
             margin-left: span(2);
+            @media (max-width:$tablet-breakpoint){
+                @include span(12 of 12);
+                margin-left: span(0);
+            }
             .text-date {
                 color: $black-color;
             }
@@ -152,10 +192,18 @@
         .section__content-text{
             @include span(8 of 12);
             margin-left: span(2); 
+            @media (max-width:$tablet-breakpoint){
+                @include span(12 of 12);
+                margin-left: span(0);
+            }
         }
         .calltoaction{
             @include span(8 of 12);
             margin-left: span(2); 
+            @media (max-width:$tablet-breakpoint){
+                @include span(12 of 12);
+                margin-left: span(0);
+            }
         }
     }
 
@@ -167,11 +215,18 @@
             .text-copyright{
                 @include span(8 of 12);
                 color: white;
+                @media (max-width:$tablet-breakpoint){
+                    @include span(12 of 12);
+                    text-align: center;
+                }
             }
             .text-address{
                 @include span(4 of 12);
-                //margin-left: span(8); 
                 color: white;
+                @media (max-width:$tablet-breakpoint){
+                    @include span(12 of 12);
+                    text-align: center;
+                }
                 a{
                     color: white;
                     &:hover {
