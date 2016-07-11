@@ -423,6 +423,11 @@ body {
 }
 
 /* line 73, ../sass/partials/_framework.scss */
+.desktop-header__mobile-menu {
+  font-size: 100px;
+}
+
+/* line 77, ../sass/partials/_framework.scss */
 .mobile-menu {
   -moz-transition: left, 0.3s;
   -o-transition: left, 0.3s;
@@ -435,7 +440,7 @@ body {
   color: #ffffff;
 }
 @media (max-width: 768px) {
-  /* line 73, ../sass/partials/_framework.scss */
+  /* line 77, ../sass/partials/_framework.scss */
   .mobile-menu {
     display: block;
     position: fixed;
@@ -444,7 +449,7 @@ body {
   }
 }
 
-/* line 89, ../sass/partials/_framework.scss */
+/* line 93, ../sass/partials/_framework.scss */
 .mobile-menu--visible {
   left: 0px;
   -moz-transition: left, 0.3s;
@@ -453,41 +458,48 @@ body {
   transition: left, 0.3s;
 }
 
-/* line 99, ../sass/partials/_framework.scss */
+/* line 103, ../sass/partials/_framework.scss */
 .mobile-menu__top-close {
   float: left;
   width: 10px;
   font-family: FontAwesome;
-}
-
-/* line 105, ../sass/partials/_framework.scss */
-.mobile-menu__top-logo {
-  width: 100%;
-  text-align: center;
+  font-size: 100px;
 }
 
 /* line 110, ../sass/partials/_framework.scss */
-.mobile-menu__items {
+.mobile-menu__top-logo {
   width: 100%;
+  text-align: center;
+  padding-top: 20px;
 }
 
-/* line 114, ../sass/partials/_framework.scss */
+/* line 116, ../sass/partials/_framework.scss */
+.mobile-menu__items {
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* line 121, ../sass/partials/_framework.scss */
 .mobile-menu__item {
   width: 100%;
   text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 44px;
 }
 
-/* line 120, ../sass/partials/_framework.scss */
+/* line 131, ../sass/partials/_framework.scss */
 .mobile-menu__item a {
   color: #ffffff;
 }
 
-/* line 124, ../sass/partials/_framework.scss */
+/* line 135, ../sass/partials/_framework.scss */
 .section, .section--about, .section--work-chl, .section--work-tsn, .section--connect, .section--contact, .section--footer {
   width: 100%;
 }
 
-/* line 133, ../sass/partials/_framework.scss */
+/* line 144, ../sass/partials/_framework.scss */
 .section__content {
   max-width: 1200px;
   width: 1200px;
@@ -496,18 +508,18 @@ body {
   margin-right: auto;
 }
 @media (max-width: 1200px) {
-  /* line 133, ../sass/partials/_framework.scss */
+  /* line 144, ../sass/partials/_framework.scss */
   .section__content {
     width: calc(100% - 20px);
   }
 }
 
-/* line 146, ../sass/partials/_framework.scss */
+/* line 157, ../sass/partials/_framework.scss */
 .section__content-picture {
   text-align: center;
 }
 
-/* line 150, ../sass/partials/_framework.scss */
+/* line 161, ../sass/partials/_framework.scss */
 .section__content-column {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -518,7 +530,7 @@ body {
   padding-right: 3.7878787879%;
 }
 @media (max-width: 768px) {
-  /* line 150, ../sass/partials/_framework.scss */
+  /* line 161, ../sass/partials/_framework.scss */
   .section__content-column {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -530,12 +542,12 @@ body {
   }
 }
 
-/* line 159, ../sass/partials/_framework.scss */
+/* line 170, ../sass/partials/_framework.scss */
 .about-logo {
   text-align: center;
 }
 
-/* line 165, ../sass/partials/_framework.scss */
+/* line 176, ../sass/partials/_framework.scss */
 h1 {
   text-transform: uppercase;
   font-family: 'Alegreya Sans', sans-serif;
@@ -545,13 +557,13 @@ h1 {
   font-size: 64px;
 }
 @media (max-width: 768px) {
-  /* line 165, ../sass/partials/_framework.scss */
+  /* line 176, ../sass/partials/_framework.scss */
   h1 {
     font-size: 32px;
   }
 }
 
-/* line 178, ../sass/partials/_framework.scss */
+/* line 189, ../sass/partials/_framework.scss */
 .text-date {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
@@ -559,14 +571,14 @@ h1 {
   font-size: 15px;
 }
 @media (max-width: 420px) {
-  /* line 178, ../sass/partials/_framework.scss */
+  /* line 189, ../sass/partials/_framework.scss */
   .text-date {
     font-size: 12px;
     margin-bottom: 5px;
   }
 }
 
-/* line 189, ../sass/partials/_framework.scss */
+/* line 200, ../sass/partials/_framework.scss */
 .text-title {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
@@ -574,14 +586,14 @@ h1 {
   font-size: 24px;
 }
 @media (max-width: 420px) {
-  /* line 189, ../sass/partials/_framework.scss */
+  /* line 200, ../sass/partials/_framework.scss */
   .text-title {
     font-size: 20px;
     margin-bottom: 5px;
   }
 }
 
-/* line 200, ../sass/partials/_framework.scss */
+/* line 211, ../sass/partials/_framework.scss */
 .text-byline {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
@@ -590,13 +602,13 @@ h1 {
   line-height: 1.3;
 }
 @media (max-width: 420px) {
-  /* line 200, ../sass/partials/_framework.scss */
+  /* line 211, ../sass/partials/_framework.scss */
   .text-byline {
     margin-bottom: 10px;
   }
 }
 
-/* line 211, ../sass/partials/_framework.scss */
+/* line 222, ../sass/partials/_framework.scss */
 .read-more {
   text-transform: uppercase;
   font-family: 'Alegreya Sans', sans-serif;
@@ -605,14 +617,14 @@ h1 {
   font-size: 15px;
 }
 @media (max-width: 420px) {
-  /* line 211, ../sass/partials/_framework.scss */
+  /* line 222, ../sass/partials/_framework.scss */
   .read-more {
     font-size: 12px;
     margin-bottom: 40px;
   }
 }
 
-/* line 223, ../sass/partials/_framework.scss */
+/* line 234, ../sass/partials/_framework.scss */
 .text-about {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
@@ -620,20 +632,20 @@ h1 {
   color: #4A4A4A;
 }
 @media (max-width: 768px) {
-  /* line 223, ../sass/partials/_framework.scss */
+  /* line 234, ../sass/partials/_framework.scss */
   .text-about {
     font-size: 24px;
   }
 }
 
-/* line 233, ../sass/partials/_framework.scss */
+/* line 244, ../sass/partials/_framework.scss */
 .text-copyright {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-/* line 239, ../sass/partials/_framework.scss */
+/* line 250, ../sass/partials/_framework.scss */
 .text-address {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
@@ -641,39 +653,39 @@ h1 {
   font-size: 10px;
 }
 
-/* line 246, ../sass/partials/_framework.scss */
+/* line 257, ../sass/partials/_framework.scss */
 strong {
   color: black;
   font-weight: 500;
 }
 
-/* line 250, ../sass/partials/_framework.scss */
+/* line 261, ../sass/partials/_framework.scss */
 a {
   color: #00bd79;
   font-weight: 400;
 }
-/* line 253, ../sass/partials/_framework.scss */
+/* line 264, ../sass/partials/_framework.scss */
 a:hover {
   color: #39935C;
 }
 
-/* line 258, ../sass/partials/_framework.scss */
+/* line 269, ../sass/partials/_framework.scss */
 blockquote {
   font-style: italic;
   margin: 10px 0 0 0;
 }
 
-/* line 264, ../sass/partials/_framework.scss */
+/* line 275, ../sass/partials/_framework.scss */
 a.button {
   color: white;
 }
-/* line 266, ../sass/partials/_framework.scss */
+/* line 277, ../sass/partials/_framework.scss */
 a.button:hover {
   color: white;
   background-color: #39935C;
 }
 
-/* line 271, ../sass/partials/_framework.scss */
+/* line 282, ../sass/partials/_framework.scss */
 .button {
   padding: 10px 20px 10px 20px;
   background-color: #00bd79;
@@ -687,7 +699,7 @@ a.button:hover {
   font-weight: 700;
   font-size: 12px;
 }
-/* line 282, ../sass/partials/_framework.scss */
+/* line 293, ../sass/partials/_framework.scss */
 .button a {
   color: white;
 }

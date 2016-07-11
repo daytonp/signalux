@@ -70,6 +70,10 @@ body{
 
 }
 
+.desktop-header__mobile-menu{
+    font-size: 100px;
+}
+
 .mobile-menu {
     @include transition(left, $fast-speed);
     display: none;
@@ -100,20 +104,27 @@ body{
     float: left;
     width: 10px;
     font-family: FontAwesome;
+    font-size: 100px;
 }
 
 .mobile-menu__top-logo {
     width: 100%;
     text-align: center;
+    padding-top: 20px;
 }
 
 .mobile-menu__items {
     width: 100%;
+    margin-top: 60px;
 }
 
 .mobile-menu__item {
     width: 100%;
     text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 44px;
 
 }
 
