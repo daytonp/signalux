@@ -82,9 +82,11 @@
             @media (max-width:$tablet-breakpoint){
                 height: 567px;
             }
+        .section__content-text{
+            @include span(12 of 12);
              h1 {
                 color: white;
-                // text-align: right;
+                text-align: left;
                 margin-top: 200px;
                 margin-bottom: 0px;
                 @media (max-width:$tablet-breakpoint){
@@ -92,6 +94,7 @@
                     text-align: none;
                 }
             }
+        }
 
             .read-more{
                 color: white;
@@ -105,10 +108,8 @@
             }
         .section__content-column {
             @include span(6 of 12);
-            margin-left: span(6);
             @media (max-width:$tablet-breakpoint){
-                @include span(9 of 12);
-                margin-left: span(3);
+                @include span(12 of 12);
             }
             .text-byline {
                 color: white;
@@ -121,7 +122,7 @@
     &--connect {
         @extend .section;
         background-color: $connect-bgcolor;
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
         .section__content{
             h1 {
                 color: $brand-primary;
