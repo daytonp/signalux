@@ -8,7 +8,7 @@ var menu_slide_speed = 300;
 
 $(document).ready(function() { 
 
-    $(".desktop-header__mobile-menu").click(function() {
+    $(".desktop-header__mobile-menu__button").click(function() {
         $(".mobile-menu").addClass("mobile-menu--visible");
 
     })

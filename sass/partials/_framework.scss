@@ -75,6 +75,22 @@ body{
         @media (max-width: $tablet-breakpoint) {
             display: block;
         }
+
+        &__button {
+            float: left;
+        }
+
+        &__logo {
+            text-align: center;
+            width: calc(100% - 51px);
+            float: left;
+
+            img {
+                height: 29px;
+            }
+
+        }
+    
     }
 
 }
@@ -93,6 +109,8 @@ body{
         left: -100%;
         top: 0px;
     }
+
+    
 
 }
 
